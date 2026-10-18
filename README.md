@@ -2,7 +2,7 @@
 
 Estadísticas de voleibol **en directo** mientras scouteas un partido con **DataVolley 4**, en el ordenador y en el **móvil del entrenador**, sin instalar ningún programa.
 
-Creado por Pedro (CV Voleibol Barberà) para usarlo en partidos reales. Es gratis y cualquiera puede usarlo con su equipo.
+Creado en el CV Voleibol Barberà para usarlo en partidos reales. Es gratis y cualquiera puede usarlo con su equipo.
 
 ```
  Ordenador del scout                        Internet                     Móvil del entrenador
@@ -54,11 +54,11 @@ Creado por Pedro (CV Voleibol Barberà) para usarlo en partidos reales. Es grati
 **En el móvil del entrenador (`banquillo.html`):**
 
 - Ve lo mismo, adaptado al móvil, actualizado en 1–2 segundos.
-- Tiene **plantillas** preparadas:
-  - **Jose:** recepción, saque y jugadores en pista.
-  - **Edurne:** estado del partido y ataque individual por posiciones.
+- Tiene **plantillas**:
   - **Rápida:** todo en una sola pantalla, sin deslizar.
-  - **Lista.**
+  - **Lista:** todos los bloques uno debajo de otro.
+  - **Las tuyas:** creas tus propias plantillas eligiendo qué secciones ver y en qué orden, y se quedan guardadas en el móvil.
+- Al tocar un jugador ves sus **direcciones de saque** o **de ataque** dibujadas en el campo.
 - Tiene un **chat privado** entre el scout y el banquillo, con mensajes rápidos.
 - Puede **mantener la pantalla encendida** y usar **modo oscuro**.
 - Puede **descargar el .dvw** del partido.
@@ -292,15 +292,36 @@ El móvil necesita una **dirección web** (`https://…`) para abrir el banquill
 
 - **Abajo hay 5 pestañas:** **Resumen** · **Pista** · **Nosotros** · **Rival** · **Mensajes**.
 - **En Resumen, arriba**, se elige la plantilla:
-  - **Jose:**
-    - recepción individual nuestra y del rival (% positiva);
-    - saque por jugador (si tocas un jugador, ves sus **direcciones de saque**);
-    - los 12 jugadores **en pista** con el colocador y el sacador marcados.
-  - **Edurne:**
-    - **estado del partido**: side-out, break, ataque, recepción, puntos directos y errores regalados, con ▲▼ en lo que vamos mejor o peor;
-    - **ataque individual**, con barras en la misma escala para comparar jugadores; se puede ver **por posición** o en **ranking**.
   - **Rápida:** lo más importante **en una sola pantalla, sin deslizar**.
   - **Lista:** todos los bloques uno debajo de otro.
+  - **Tus plantillas**, con el nombre que les hayas puesto.
+- **Crear una plantilla:** pulsa **＋ Nueva** (al final de la fila de plantillas) o, en el menú **⋯**, **Crear una plantilla nueva**.
+  1. Escribe un nombre, por ejemplo «Tiempo muerto».
+  2. Marca las secciones que quieras ver:
+     - marcador;
+     - estado del partido (nosotros contra el rival);
+     - recepción individual;
+     - saque por jugador;
+     - ataque individual;
+     - en pista ahora;
+     - rotaciones;
+     - tiempos muertos y cambios;
+     - avisos;
+     - últimos puntos.
+     (o pulsa un **modelo** para empezar: *Tiempo muerto*, *Recepción y saque*, *Ataque*, *Rotaciones* o *Todo*).
+  3. Ordénalas con **↑ ↓** (o **⤒** para ponerla la primera).
+  4. Opciones:
+     - un **icono**;
+     - qué **equipos** se ven: los dos, solo nosotros o solo el rival;
+     - qué **datos**: lo que elijas arriba, siempre el set o siempre el partido;
+     - **tamaño de la letra**: normal, grande o muy grande;
+     - botones para saltar a cada sección;
+     - **modo compacto**;
+     - **abrir el banquillo con esta plantilla**.
+  5. Pulsa **Guardar**. Desde **✎ Editar** también puedes **Duplicar** o **Eliminar** la plantilla.
+
+  Se guarda en ese móvil y aparece arriba junto a las demás. Para cambiarla o borrarla, ábrela y pulsa **✎ Editar**.
+- **Direcciones de saque y de ataque:** en las secciones de saque y de ataque, **toca un jugador**. Se abre su campo con cada saque o ataque dibujado (de dónde sale y adónde va), sus números y la lista de acciones con el marcador de cada una.
 - **Set / Partido** (arriba a la derecha): elige si los datos son del set actual o de todo el partido.
 - **Toca cualquier recuadro** para abrir el **detalle** desde abajo. Se cierra con la ✕, tocando fuera o deslizando hacia abajo.
 - **Menú ⋯** (arriba a la derecha):
@@ -420,7 +441,7 @@ Muy poco: un `.dvw` pesa menos de 1 MB. El plan gratuito tiene espacio para mile
 
 ## 15. Créditos y licencias
 
-- Idea, pruebas y uso en partidos reales: **Pedro**, entrenador y scout del **CV Voleibol Barberà**.
+- Idea, pruebas y uso en partidos reales: cuerpo técnico del **CV Voleibol Barberà**.
 - Librerías incluidas dentro de los archivos (licencia MIT):
   - [supabase-js](https://github.com/supabase/supabase-js), para la conexión con Supabase;
   - [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator), para crear los códigos QR.

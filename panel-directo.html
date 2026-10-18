@@ -3094,7 +3094,10 @@ function ring(p,col,size=86){const r=(size-10)/2,c=2*Math.PI*r,v=p==null?0:Math.
   return`<svg viewBox="0 0 ${size} ${size}" class="ring"><circle cx="${size/2}" cy="${size/2}" r="${r}" class="rt"/><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${col}" stroke-width="10" stroke-linecap="round" stroke-dasharray="${(c*v/100).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 ${size/2} ${size/2})" ${v?'':'stroke-opacity="0"'}/></svg>`}
 
 /* ---------- vista ---------- */
-function render(flash){const main=$('#main');$('#bar').style.display=st.M?'contents':'none';
+function render(flash){const _y=window.scrollY,_lock=document.documentElement.classList.contains('dlgopen');renderInner(flash);
+  /* al redibujar, la página se queda donde estaba (no vuelve arriba) */
+  if(!_lock&&Math.abs(window.scrollY-_y)>2)window.scrollTo(0,_y)}
+function renderInner(flash){const main=$('#main');$('#bar').style.display=st.M?'contents':'none';
   if(!st.M){main.innerHTML=VIEWER?(window.viewerWaitHTML?viewerWaitHTML():''):welcomeHTML();updStatus();return}
   const M=st.M,us=st.us,them=1-us;const L=liveInfo(M);
   const Ms=st.scope==='set'?scopeM(M,L.set):M;const S=aug(analyze(Ms));const U=S.team[us],T=S.team[them];
